@@ -47,14 +47,21 @@ Below is a step-by-step guide to approaching the problem:-
 ## Roadmap
 
 The given steps have been followed, in order to solve the Problem Statement of the Hackathon:
+    
     1. Download the required Datasets, from the given link of NSE website.
         Choose any of the NIFTY50 stocks options for analysis.
             I have chose the stock options of Reliance and have downloaded the data for both Call Option as well as Put Option, month-wise, for the time-period specified, in the problem statement of the Hackathon, from January 2022 to December 2024.
+    
     2. Install all the required libraries and modules, if not install before-hand and import them, in the coding environment.
+    
     3. Once the datasets are download, store them together in a single folder, which can be accessed either by path or by mounting Google Drive, while coding.
+    
     4. Access the datasets and load them in the coding environment.
+    
     5. Visualize the datasets, along with some basic information, such as Shape, Columns, Datatypes, Description (Statistical Summary), Null Values, etc..
+    
     6. Perform Data Pre-processing Operations, such as changing the datatypes of the columns, which would be necessary for further analysis and also treating the null values present in the datasets, mainly by interpolation, forward fill (ffill) and backward fill (bfill).
+    
     7. Perform Feature Engineering and create new features, which would be helpful for analysis.
         The features created include - 
             Lag Variables, 
@@ -73,14 +80,19 @@ The given steps have been followed, in order to solve the Problem Statement of t
             Historical Volatility, 
             Normalized Volatility and 
             Option Greeks.
+    
     8. Performed Technical Analysis.
+    
     9. Build 3 Machine Learning Models namely - 
         Random Forest, 
         Logistic Regression and 
         XGBoost.
     This has been done by splitting the data into train_data and test_data and evaluated the performance of those 3 models, which would help in Technical Analysis of stocks options.
+    
     10. Option Trading Strategy is devised, by coding.
+    
     11. Risk Management is implemented.
+    
     12. Finally, Backtesting is performed on the data, ranging from January 1, 2022 to December 29, 2024, thereby, concluding this project.
 
 ## About this Repository
@@ -90,10 +102,13 @@ The project focuses on designing, implementing, and backtesting an options tradi
 ## File Structure
 
 This repository consists the following files and folders in the given way:
+    
     1. Stocks Options Dataset:
         This folder consists of 72 files, in the CSV format, which are datasets for Call Options as well as for Put Options for stocks options data from January 2022 to December 2024.
+    
     2. Notebook Ops:
         This folder contains the file titled "FEC_IITG_IntroductoryOptions24_QuantInsti_Hackathon.ipynb', which is the Jupyter Notebook file, containing the complete code for the project.
+    
     3. Readme File: The file titled 'README.md' providing an overview of the project.
 
 ## Data Source
@@ -110,22 +125,38 @@ Each of the dataset consists of the following columns:
 
 1. Symbol - Symbol of the stock whose options are to be studied. 
     In this case, the stock options of Reliance Industries have been studied, whose symbol in NSE is RELIANCE
+
 2. Date - The trading date for the data entry.
+
 3. Expiry - The expiry date of the trade.
+
 4. Option Type - The type of options being traded. 
     It is either denoted by CE for Call Options or PE for Put Options
+
 5. Strike Price - This column represents the agreed-upon price at which the underlying asset can be bought or sold if the option is exercised.
+
 6. Open - The opening price of the option on the given date.
+
 7. High - The highest price of the option during the trading day.
+
 8. Low - The lowest price of the option during the trading day.
+
 9. Close - The closing price of the option on the given date.
+
 10. LTP - The Last Traded Price for the option.
+
 11. Settle Price - The settlement price for the option contract at the end of the trading session.
+
 12. No. of Contracts - The total number of contracts traded for the option.
+
 13. Turnover in Rs. Lakhs - The monetary turnover value of the contracts traded, in lakh rupees.
+
 14. Premium Turnover in Rs. Lakhs - The turnover value specific to premium amounts for the contracts, in lakh rupees.
+
 15. Open Interest - The total number of outstanding contracts for the option at the end of the day.
+
 16. Change in Open Interest - The net change in the open interest value compared to the previous trading day.
+
 17. Underlying Value - The price of the underlying stock (Reliance Industries in this case) corresponding to the option.
 
 ## Key Steps
@@ -179,8 +210,10 @@ The following for libraries have been used in this project:
 ## Execution
 
 In order to execute this code, follow these steps:
+    
     1. Clone this repository -
         'git clone https://github.com/ImAni07/OptionTradingStrategy_StocksOptionsDataAnalysis.git'
+    
     2. Install the required libraries, if not installed before-hand, using the following commands - 
         pip install pandas 
         pip install numpy 
@@ -188,13 +221,17 @@ In order to execute this code, follow these steps:
         pip install seaborn
         pip install plotly
         pip install pandas-ta
+    
     3. Open the Jupyter Notebook in your preferred environment.
+    
     4. Run the notebook cells step-by-step to preprocess data, analyze trends, design a strategy and backtest it.
 
 ## Results
 
 1. The analysis and backtesting revealed insights into the performance of the designed options trading strategy.
+
 2. The strategy showed consistent performance on historical data with notable returns and acceptable risk levels.
+
 3. Insights gained -
     a. Effective use of technical indicators can enhance trading decisions.
     b. The importance of feature engineering and EDA in developing robust strategies.
@@ -202,13 +239,17 @@ In order to execute this code, follow these steps:
 ## Challenges
 
 1. Managing and cleaning a large dataset with missing values.
+
 2. Optimizing multiple strategy parameters to maximize profitability.
 
 ## Future Scope
 
 1. Extend the strategy to other NIFTY50 stocks.
+
 2. Incorporate advanced machine learning models for trade predictions.
+
 3. Perform real-time trading simulations using live market data.
+
 4. Develop a comprehensive dashboard for visualizing strategy performance.
 
 ## Acknowledgement
@@ -217,22 +258,33 @@ Special thanks to QuantInsti as well as Finance and Economics Club (FEC) of Indi
 ## About Author
 
 Name: Anirban Majumder
+
 Qualifications:-
+    
     1. Post Graduate: Currently pursuing MTech in Biomedical Science and Engineering with Specialization in Medical Devices and Diagnostics, from Indian Institute of Technology (IITG).
+    
     2. Under Graduate: BTech in Biotechnology from Adamas University, Kolkata.
 
 ## Contact
 
 For queries or feedback, please reach out, via anyone of the following:-
+    
     1. Email: animouani123@gmail.com
+    
     2. LinkedIn: https://www.linkedin.com/in/anirban-majumder-49344a288/
+    
     3. GitHub: https://github.com/ImAni07
+    
     4. Kaggle: https://www.kaggle.com/animou123
+    
     5. Facebook: https://www.facebook.com/share/1FR6kdhKCs/
+    
     6. Instagram: https://www.instagram.com/iamani_7.9?utm_source=qr&igsh=MXhjNGV5czNoOWJqOA== 
 
 My other profiles:-
+    
     1. Leetcode: https://leetcode.com/u/IamAni_07/
+    
     2. HackerRank: https://www.hackerrank.com/profile/animouani123
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
